@@ -1,38 +1,141 @@
-.App {
-  text-align: center;
+.college-predictor-form input {
+
+  background-color: rgb(235, 234, 234);
+  height: 40px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 2.5px solid black;
+  font-size: 16px;
+  font-weight: '500';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.college-predictor-form input::placeholder {
+  font-size: 16px;
+  font-weight: '500';
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.college-predictor-form button {
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 20px;
+  border-radius: 10px;
+  font-weight: '500';
+  width: 100%;
+  background-color: #8bc540;
   color: white;
+  max-width: 200px;
+  text-align: center;
+  border: 2.5px solid black;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.college-predictor-form button:hover {
+  background-color: black;
+  color: white;
+  /* Ensure the text color remains white */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.form-group {
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.form-group label { 
+  
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 0;
+  margin-right: 20px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.form-group label div {
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: left;
+  width: 100%;
+}
+
+.form-group input,
+.form-group .css-2b097c-container {
+  width: 100%;
+  max-width: 350px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 600px) {
+
+  .form-group label {
+    margin-bottom: 0;
+    margin-right: 20px;
+    font-weight: bold;
+    text-align: left;
   }
-  to {
-    transform: rotate(360deg);
+
+  .form-group label div {
+      margin-bottom: 0.5rem;
+      font-weight: 400;
+      font-size: 1rem;
+      text-align: left;
+      width: 100%;
   }
+
+  .form-group input,
+  .form-group .css-2b097c-container {
+    width: calc(100% - 250px);
+    flex: none;
+  }
+
+    .college-predictor-form {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+  
+    .college-predictor-form input {
+  
+      background-color: rgb(235, 234, 234);
+      height: 50px;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 350px;
+      padding: 10px;
+      box-sizing: border-box;
+      border: 2.5px solid black;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  
+    .college-predictor-form input::placeholder {
+      font-size: 16px;
+      font-weight: 500;
+    }
+  
+    .college-predictor-form button {
+
+      font-size: 20px;
+      border-radius: 10px;
+      font-weight: 600;
+      width: 100%;
+      background-color: #8bc540;
+      color: white;
+      max-width: 200px;
+      border: 2.5px solid black;
+      cursor: pointer;
+    }
+
+    .college-predictor-form button:hover {
+          background-color: black;
+          color: white;
+          /* Ensure the text color remains white */
+    }
+    .college-predictor-form div .css-qbdosj-Input {
+
+      height: 45px;
+    }
+      
 }

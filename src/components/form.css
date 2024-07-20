@@ -1,0 +1,88 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.form input {
+
+    background-color: rgb(235, 234, 234);
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2.5px solid black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.form input::placeholder {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.form select {
+
+    background-color: rgb(235, 234, 234);
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2.5px solid black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.form select option {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+}
+
+.form .button {
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    background-color: #8bc540;
+    color: white;
+    text-align: center;
+    border: 2.5px solid black;
+    cursor: pointer;
+}
+
+.form .button1 {
+    font-size: 20px;
+    font-weight: bold;
+    width: 48%;
+    /* Adjust button width */
+    background-color: #1976D2;
+    color: white;
+    text-align: center;
+    border: 2.5px solid black;
+    cursor: pointer;
+}
+
+.form .button2 {
+    font-size: 20px;
+    font-weight: bold;
+    width: 48%;
+    /* Adjust button width */
+    background-color: #8bc540;
+    color: white;
+    text-align: center;
+    border: 2.5px solid black;
+    cursor: pointer;
+}
