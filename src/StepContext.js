@@ -16,7 +16,7 @@ const StepContext = () => {
 
     function Submit() {
 
-        // e.preventDefault();
+        //e.preventDefault();
         console.log("im userdata",userData);
         const formData = new FormData();
         const currentDate = new Date();
@@ -46,16 +46,16 @@ const StepContext = () => {
             message: ans
         }
         console.log("tempplate params",templateParams)
-        alert("hello")
+        //alert("hello")
         emailjs.send(serviceId, templateId, templateParams, {publicKey: publicKey})
             .then(
                 () => {
                     console.log("Success");
-                    alert('SUCCESS!');
+                    //alert('SUCCESS!');
                 },
                 (error) => {
                     console.log("Failed");
-                    alert('FAILED...', error.text);
+                    //alert('FAILED...', error.text);
                 },
             );
 
@@ -72,10 +72,10 @@ const StepContext = () => {
                 setFinalData(finalData => [...finalData, userData]);
                 setUserData([]);
                 console.log(finalData);
-                alert("Form submitted successfully!");
+                //alert("Form submitted successfully!");
             } else {
 
-                alert("Form unsuccessful!");
+                //alert("Form unsuccessful!");
                 throw new Error('Network response was not ok');
             }
         })
